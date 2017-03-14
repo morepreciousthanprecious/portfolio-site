@@ -1,0 +1,10 @@
+$mainIndigo:#360099;
+$mainFuscia:#d817a2;
+$mainPurple:#8709B0;
+$mainBlue:#0910B0;
+$mainTurq:#23D5DB;
+
+body {
+	font-family: 'News Cycle', serif;
+	margin: auto;
+}

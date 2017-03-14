@@ -1,0 +1,97 @@
+.nav-bar {
+	width: 100%;
+	background: $mainIndigo;
+	border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 1px #000;
+		&:before, &:after {
+		box-sizing: border-box;
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	
+		&__hold {
+		width: 95%;
+		max-width: 1000px;
+		margin: 0 auto;
+		overflow: hidden;
+		}
+		
+	&__logo {
+		font-family: 'Libre Franklin', sans-serif;
+		color: #fff;
+		font-size: 1.5rem;
+		font-weight: 500;
+		text-decoration: none;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+		float: left;
+		display: block;
+		padding: 20px;
+		
+		@mixin atSmall {
+			font-size: 1.25rem;
+			padding-left: 10px;
+		}
+		
+		@mixin atLarge {
+			font-size: 1.7rem;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	&__list {
+		list-style: none;
+		float: right;
+		display: none;
+		
+		@mixin atMedium {
+			display: block;
+		}
+	}
+
+	&__list-item {
+		float: left;
+	}
+	
+	&__link {
+		font-family: 'Libre Franklin', sans-serif;
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.5rem;
+		font-weight: 600;
+		display: block;
+		padding: 8px 12px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+		
+		@mixin atMedium {
+			font-size: 1.18rem;
+			font-weight: 300;
+		}
+		
+		@mixin atLarge {
+			font-size: 1.5rem;
+			padding: 7px 40px;
+		}
+	}
+
+	&__link-last {
+		@mixin atLarge {
+			padding-right: 0;
+		}
+	}
+	
+}
+
+.nav-menu {
+	color: #fff;
+	font-size: 1.5rem;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	float: right;
+	padding: 15px 10px;
+	display: none;
+	
+	@mixin atSmall {
+		display: block;
+	}
+}
