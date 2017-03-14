@@ -4,4 +4,5 @@
 @import "modules/_nav";
 @import "modules/_about";
 @import "modules/_row";
-@import "modules/_portfolio";
+@import "modules/_portfolio"; 
+@import "modules/_footer";

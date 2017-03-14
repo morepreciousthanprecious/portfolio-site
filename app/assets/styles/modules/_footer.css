@@ -1,0 +1,42 @@
+.footer {
+	color: #fff;
+	background-color: #000;
+	
+	&:before, &:after {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	
+	&__text {
+		margin: 0px;
+		padding: 10px;
+		text-align: center;
+		
+	}
+	
+	&__text-links {
+		padding-top: 20px;
+		
+		@mixin atSmall {
+			padding-top: 10px;
+		}
+	}
+	
+	&__icon {
+		max-height: 30px;
+		padding: 5px;
+		display: inline-block;
+	}
+	
+	&__text-subdued {
+		color: #4f4f4f;
+	}
+	
+	p {
+		font-size: .6rem;
+		font-weight: 500;
+		
+	}
+	
+}

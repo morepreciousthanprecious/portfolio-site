@@ -22,11 +22,10 @@
 	}
 	
 	&__description {
-		font-family: 'Libre Franklin', sans-serif;
 		color: #000;
 		font-size: 3rem;
-		font-weight: 300;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+		font-weight: 700;
+		text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 		padding-top: 2.5rem;
 		padding-bottom: -1.75rem;
 		
@@ -34,7 +33,7 @@
 			font-size: 2rem;
 			padding-top: 2rem;
 			padding-bottom: .5rem;
-			text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+			text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 		}
 		
 		@mixin atLarge {
@@ -51,10 +50,10 @@
 	
 	&__description-terms {
 		color: #000;
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 		font-weight: 700;
 		text-align: right;
-		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+		text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 		float: right;
 		padding-top: 0px;
 		
