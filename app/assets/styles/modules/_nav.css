@@ -25,18 +25,20 @@
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 		float: left;
 		display: block;
-		padding: 25px;
+		padding: 12px;
 		
 		@mixin atSmall {
 			font-size: 1.25rem;
-			padding-left: 10px;
-			padding-top: 14px;
+			padding-left: 6px;
+			padding-top: 10px;
+			padding-bottom: 8px;
 		}
 		
 		@mixin atLarge {
 			font-size: 1.7rem;
 			padding-left: 0;
 			padding-right: 0;
+			margin-bottom: px;
 		}
 	}
 	
@@ -47,6 +49,13 @@
 		
 		@mixin atMedium {
 			display: block;
+			margin: auto;
+			padding-top: 5px;
+		}
+		
+		@mixin atLarge {
+			margin: auto;
+			padding-top: 8px;
 		}
 	}
 
@@ -54,29 +63,42 @@
 		float: left;
 	}
 	
-	&__list-item-sub {
-		float: left;
-	}
 	
 	&__sub-list {
 		position: absolute;
+		float: center;
+		margin-top: 2px;
+		margin-left: -.85rem;
+		padding: 12px 20px;
+		list-style: none;
+		text-align: center;
 		background: #ccc;
-		top: 30px;
-		display: none;
-	}
-	
-	&__sub-list a {
-		color: #000;
-		padding: 12px 12px;
-		display: block;
+		display: ;
 		
-		&:hover {
-			color: #000;
+		@mixin atLarge {
+			margin-top: 6px;
+			margin-left: 12px;
 		}
 	}
 	
+
 	&__sub-item {
-		display: none;
+		display: inline;
+		padding-right: 14px;
+		
+		@mixin atLarge {
+			padding-right: 14px;
+		}
+		
+		a {
+			color: #000;
+			text-decoration: none;
+			font-weight: 500;
+			
+			@mixin atLarge {
+				font-size: 1.25rem;
+			}
+		}
 	}
 	
 	&__link {
@@ -98,6 +120,13 @@
 			padding: 7px 40px;
 		}
 	}
+	
+	&__link-sub {
+		&:hover, ul.focused {
+			display: inline-block;
+			color: #ccc;
+		}
+	}
 
 	&__link-last {
 		@mixin atLarge {
@@ -113,11 +142,14 @@
 	font-weight: 300;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 	float: right;
-	padding: 9px;
+	padding: 10px;
 	display: none;
 	
 	@mixin atSmall {
 		display: block;
+		padding-top: 7px;
+		padding-right: 5px;
+		padding-bottom: 8px;
 	}
 }
 

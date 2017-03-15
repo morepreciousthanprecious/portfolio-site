@@ -495,15 +495,16 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   float: left;
   display: block;
-  padding: 25px;
+  padding: 12px;
 }
 
 @media (max-width:599px) {
 
   .nav-bar__logo {
     font-size: 1.25rem;
-    padding-left: 10px;
-    padding-top: 14px;
+    padding-left: 6px;
+    padding-top: 10px;
+    padding-bottom: 8px;
   }
 }
 
@@ -513,6 +514,7 @@ body {
     font-size: 1.7rem;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: px;
   }
 }
 
@@ -526,6 +528,16 @@ body {
 
   .nav-bar__list {
     display: block;
+    margin: auto;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width:1200px) {
+
+  .nav-bar__list {
+    margin: auto;
+    padding-top: 8px;
   }
 }
 
@@ -533,29 +545,49 @@ body {
   float: left;
 }
 
-.nav-bar__list-item-sub {
-  float: left;
-}
-
 .nav-bar__sub-list {
   position: absolute;
+  float: center;
+  margin-top: 2px;
+  margin-left: -.85rem;
+  padding: 12px 20px;
+  list-style: none;
+  text-align: center;
   background: #ccc;
-  top: 30px;
-  display: none;
+  display: ;
 }
 
-.nav-bar__sub-list a {
-  color: #000;
-  padding: 12px 12px;
-  display: block;
-}
+@media (min-width:1200px) {
 
-.nav-bar__sub-list a:hover {
-  color: #000;
+  .nav-bar__sub-list {
+    margin-top: 6px;
+    margin-left: 12px;
+  }
 }
 
 .nav-bar__sub-item {
-  display: none;
+  display: inline;
+  padding-right: 14px;
+}
+
+@media (min-width:1200px) {
+
+  .nav-bar__sub-item {
+    padding-right: 14px;
+  }
+}
+
+.nav-bar__sub-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (min-width:1200px) {
+
+  .nav-bar__sub-item a {
+    font-size: 1.25rem;
+  }
 }
 
 .nav-bar__link {
@@ -584,6 +616,11 @@ body {
   }
 }
 
+.nav-bar__link-sub:hover, .nav-bar__link-sub ul.focused {
+  display: inline-block;
+  color: #ccc;
+}
+
 @media (min-width:1200px) {
 
   .nav-bar__link-last {
@@ -597,7 +634,7 @@ body {
 	font-weight: 300;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 	float: right;
-	padding: 9px;
+	padding: 10px;
 	display: none;
 }
 
@@ -605,6 +642,9 @@ body {
 
   .nav-menu {
     display: block;
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-bottom: 8px;
   }
 }
 
@@ -615,6 +655,7 @@ body {
 	background: ;
 	margin-top: -2.4rem;
 	margin-bottom: 6rem;
+	z-index: 1;
 	
 }
 
@@ -627,14 +668,14 @@ body {
 @media (max-width:599px) {
 
   .about {
-    margin-top: -2.3rem;
+    margin-top: -1.6rem;
   }
 }
 
 @media (min-width:1200px) {
 
   .about {
-    margin-top: -2.5rem;
+    margin-top: -2rem;
   }
 }
 
