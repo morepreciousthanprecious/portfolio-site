@@ -14,28 +14,52 @@
 	&__headline {
 		color: #000;
 		text-transform: none;
-		font-weight: 600;
+		font-weight: 700;
 		font-size: 1.82rem;
-		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 		
 		@mixin atSmall {
-			font-size: 1.2rem;
+			font-size: 1.5rem;
 		}
 	}
+	
+		
+	&__headline-sub {
+		color: #000;
+		font-weight: 400;
+		font-size: 1.2rem;
+		text-align: right;
+		padding-top: .8rem;
+		margin-bottom: -.25rem;
+		
+		@mixin atMedium {
+			text-align: left;
+		}
+		
+		@mixin atLarge {
+			text-align: left;
+		}
+		}
 	
 	&__hr {
 		border: 0;
 		height: 2px;
 		background-color: #000;
-		margin-bottom: 2rem;
-		margin-top: -1rem;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
 	}
-
+	
+	&__hr-light {
+		border:0;
+		height: 2px;
+		background-color: #ccc;
+		margin-bottom: 1.5rem;
+	}
+	
 	&__responsive {
 		padding: 0 0px;
 		float: left;
 		width: 24.9999%;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 		margin-bottom: 50px;
 		
 		@mixin atSmall {
@@ -55,7 +79,7 @@
 	
 	&__gallery {
 		border: 0px solid #fff;
-		background-color: rgba(0, 0, 0, 1);
+		background-color: rgba(255, 255, 255, 1);
 		
 		@mixin atLarge {
 		}
@@ -67,6 +91,7 @@
 			
 		}
 	}
+	
 	
 	&__gallery--img {
 		width: 100%;
@@ -87,12 +112,12 @@
 		text-align: center;
 		font-size: .8rem;
 		color: #000;
-		font-weight: 300;
+		font-weight: 200;
 	}
 	
 	h4 {
 		color: #fff;
-		font-weight: 500;
+		font-weight: 400;
 		font-size: 1rem;
 		text-align: left;
 		padding-left: 10px;
@@ -103,7 +128,7 @@
 	
 	p {
 		color: #fff;
-		font-weight: 300;
+		font-weight: 200;
 		font-size: .7rem;
 		text-align: left;
 		padding-left: 10px;

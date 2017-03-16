@@ -1,11 +1,9 @@
 .nav-bar {
 	width: 100%;
-	background: #000;
-	border-bottom: 0px solid rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 1px 1px #000;
+	background: #ff00cc;
 		&:before, &:after {
 		box-sizing: border-box;
-		margin: 0px;
+		margin: px;
 		padding: 0px;
 		list-style: none;
 	}
@@ -20,7 +18,7 @@
 	&__logo {
 		color: #fff;
 		font-size: 1.5rem;
-		font-weight: 500;
+		font-weight: 400;
 		text-decoration: none;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 		float: left;
@@ -30,7 +28,7 @@
 		@mixin atSmall {
 			font-size: 1.25rem;
 			padding-left: 6px;
-			padding-top: 10px;
+			padding-top: 8px;
 			padding-bottom: 8px;
 		}
 		
@@ -93,7 +91,7 @@
 		a {
 			color: #000;
 			text-decoration: none;
-			font-weight: 500;
+			font-weight: 400;
 			
 			@mixin atLarge {
 				font-size: 1.25rem;
@@ -105,14 +103,13 @@
 		color: #fff;
 		text-decoration: none;
 		font-size: 1.5rem;
-		font-weight: 600;
+		font-weight: 900;
 		display: block;
-		padding: 12px 10px;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+		padding: 12px 12px;
 		
 		@mixin atMedium {
 			font-size: 1.18rem;
-			font-weight: 300;
+			font-weight: 700;
 		}
 		
 		@mixin atLarge {
@@ -139,8 +136,7 @@
 .nav-menu {
 	color: #fff;
 	font-size: 1.5rem;
-	font-weight: 300;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	font-weight: 400;
 	float: right;
 	padding: 10px;
 	display: none;
