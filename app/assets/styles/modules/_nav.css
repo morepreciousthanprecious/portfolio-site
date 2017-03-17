@@ -15,6 +15,23 @@
 		overflow: hidden;
 		}
 		
+		&__menu-icon {
+		color: #fff;
+		font-size: 1.5rem;
+		font-weight: 400;
+		float: right;
+		padding: 10px;
+		display: none;
+	
+		@mixin atSmall {
+			display: block;
+			padding-top: 7px;
+			padding-right: 5px;
+			padding-bottom: 8px;
+		}
+
+	}
+		
 	&__logo {
 		color: #fff;
 		font-size: 1.5rem;
@@ -55,23 +72,41 @@
 			margin: auto;
 			padding-top: 8px;
 		}
+		
+		&--is-visible {
+			display: block;
+			
+			@mixin atSmall {
+				margin-bottom: .35rem;
+			}
+		}
 	}
 
 	&__list-item {
 		float: left;
+		
+		@mixin atSmall {
+			margin-top: -2px;
+			padding-bottom: 8px;
+			padding-left: 12px;
+			padding-right: 12px;
+		}
 	}
 	
 	
 	&__sub-list {
 		position: absolute;
-		float: center;
-		margin-top: 2px;
+		float: right;
+		margin-top: -1px;
 		margin-left: -.85rem;
 		padding: 12px 20px;
 		list-style: none;
 		text-align: center;
 		background: #ccc;
-		display: ;
+		
+		@mixin atSmall {
+			margin-top: .8rem;
+		}
 		
 		@mixin atLarge {
 			margin-top: 6px;
@@ -102,14 +137,15 @@
 	&__link {
 		color: #fff;
 		text-decoration: none;
-		font-size: 1.5rem;
-		font-weight: 900;
+		font-size: 1rem;
+		font-weight: 700;
 		display: block;
-		padding: 12px 12px;
+		
 		
 		@mixin atMedium {
 			font-size: 1.18rem;
 			font-weight: 700;
+			padding: 12px 12px;
 		}
 		
 		@mixin atLarge {
@@ -131,21 +167,18 @@
 		}
 	}
 	
+	&__menu-content {
+		display: none;
+		
+		@mixin atMedium {
+			display: block;
+		}
+		
+		&--is-visible {
+			display: block;
+		}
+	}
+	
 }
 
-.nav-menu {
-	color: #fff;
-	font-size: 1.5rem;
-	font-weight: 400;
-	float: right;
-	padding: 10px;
-	display: none;
-	
-	@mixin atSmall {
-		display: block;
-		padding-top: 7px;
-		padding-right: 5px;
-		padding-bottom: 8px;
-	}
-}
 

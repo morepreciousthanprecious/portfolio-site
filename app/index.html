@@ -10,8 +10,6 @@
 	
 	<!--INSERT LINK TO CSS FILE HERE-->
 	<link rel="stylesheet" href="temp/styles/styles.css">
-	<!--INSERT LINK TO JS FILE HERE-->
-	
 	<!--INSERT ANY OTHER DEPENDENCIES HERE-->
 	
 </head>
@@ -19,8 +17,7 @@
 	<header>
 	<nav class="nav-bar">
 		<div class="nav-bar__hold">
-			<a href="#" class="nav-bar__logo"></a>
-			<a id="nav-menu" class="nav-menu">&#9677;</a>
+			<div class="nav-bar__menu-icon">&#9677;</div>
 			<ul class="nav-bar__list" id="nav">
 				<li class="nav-bar__list-item"> 
 					<a class="nav-bar__link" href="#about">About</a>
@@ -40,7 +37,7 @@
 						</ul>
 				</li>
 				<li class="nav-bar__list-item"> 
-					<a class="nav-bar__link nav-bar__link-last" href="#contact">Contact</a>
+					<a class="nav-bar__link nav-bar__link-last" href="./contact/index.html">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -60,8 +57,10 @@
 				<h3 class="about__description-terms">Design, Photography, and Front End Web Development</h3>
 			</div>
 		</div>
-		<div class="about__hold about__row">
-			<h2 class="about__description-pink">&#9677;</h2>
+		<div class="about__hold about__row about__row-12">
+			<div class="about__description-pink">
+				<h2>&#9677;</h2>
+			</div>
 		</div>
 	</div> 
 	
@@ -93,7 +92,7 @@
 					</div>
 					<div class="portfolio__desc">
 						<h4>Photo</h4>
-						<p>Product + Commercial + Conceptual</p>
+						<p>Product + Commercial + Fine Art</p>
 						</div>
 				</div>
 			</div>
@@ -120,23 +119,18 @@
 			<div class="footer__text">
 				<div class="footer__links">
 					<div class="footer__icon">
-						<a href="">
+						<a href="https://github.com/morepreciousthanprecious">
 							<img src="/assets/images/github-icon.png">
 						</a>
 					</div>
 					<div class="footer__icon">
-						<a href="">
+						<a href="https://www.instagram.com/touchmystone/">
 							<img src="/assets/images/instagram-icon.png">
 						</a>
 					</div>
 					<div class="footer__icon">
-						<a href="">
+						<a href="https://www.linkedin.com/in/jaclyn-touchstone-b4b44722/">
 							<img src="/assets/images/linkedin-icon.png">
-						</a>
-					</div>
-					<div class="footer__icon">
-						<a href="">
-							<img src="/assets/images/twitter-icon.png">
 						</a>
 					</div>
 				</div>
@@ -154,7 +148,7 @@
 			</div>
 		</div>
 	</footer>
-
-		<!--INSERT JS BUILD HERE-->
+	<!--INSERT JS BUILD HERE-->
+	<script src="temp/scripts/App.js"></script> 
 </body>
 </html>

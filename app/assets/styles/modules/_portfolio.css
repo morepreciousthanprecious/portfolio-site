@@ -39,7 +39,8 @@
 			text-align: left;
 		}
 		}
-	
+
+		
 	&__hr {
 		border: 0;
 		height: 2px;
@@ -68,11 +69,12 @@
 		
 		@mixin atMedium {
 			width: 47.999%;
-			margin: 6px 4px;
+			margin: 6px 5px;
 		}
 		
 		@mixin atLarge {
 			width: 32%;
+			margin: 6px 6px;
 			
 		}
 	}
@@ -116,18 +118,18 @@
 	}
 	
 	h4 {
-		color: #fff;
-		font-weight: 400;
+		color: #000;
+		font-weight: 700;
 		font-size: 1rem;
 		text-align: left;
 		padding-left: 10px;
 		margin-bottom: 0px;
-		margin-top: 11px;
+		margin-top: 10px;
 	}
 	
 	
 	p {
-		color: #fff;
+		color: #000;
 		font-weight: 200;
 		font-size: .7rem;
 		text-align: left;
@@ -138,6 +140,9 @@
 
 	}
 	
+	&__contact-form {
+		
+	}
 		
 }
 

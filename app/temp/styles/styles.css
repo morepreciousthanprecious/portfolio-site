@@ -485,6 +485,25 @@ body {
   overflow: hidden;
 }
 
+.nav-bar__menu-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  float: right;
+  padding: 10px;
+  display: none;
+}
+
+@media (max-width:599px) {
+
+  .nav-bar__menu-icon {
+    display: block;
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+  }
+}
+
 .nav-bar__logo {
   color: #fff;
   font-size: 1.5rem;
@@ -539,20 +558,47 @@ body {
   }
 }
 
+.nav-bar__list--is-visible {
+  display: block;
+}
+
+@media (max-width:599px) {
+
+  .nav-bar__list--is-visible {
+    margin-bottom: .35rem;
+  }
+}
+
 .nav-bar__list-item {
   float: left;
 }
 
+@media (max-width:599px) {
+
+  .nav-bar__list-item {
+    margin-top: -2px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
 .nav-bar__sub-list {
   position: absolute;
-  float: center;
-  margin-top: 2px;
+  float: right;
+  margin-top: -1px;
   margin-left: -.85rem;
   padding: 12px 20px;
   list-style: none;
   text-align: center;
   background: #ccc;
-  display: ;
+}
+
+@media (max-width:599px) {
+
+  .nav-bar__sub-list {
+    margin-top: .8rem;
+  }
 }
 
 @media (min-width:1200px) {
@@ -591,10 +637,9 @@ body {
 .nav-bar__link {
   color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-size: 1rem;
+  font-weight: 700;
   display: block;
-  padding: 12px 12px;
 }
 
 @media (min-width:600px) {
@@ -602,6 +647,7 @@ body {
   .nav-bar__link {
     font-size: 1.18rem;
     font-weight: 700;
+    padding: 12px 12px;
   }
 }
 
@@ -625,31 +671,26 @@ body {
   }
 }
 
-.nav-menu {
-	color: #fff;
-	font-size: 1.5rem;
-	font-weight: 400;
-	float: right;
-	padding: 10px;
-	display: none;
+.nav-bar__menu-content {
+  display: none;
 }
 
-@media (max-width:599px) {
+@media (min-width:600px) {
 
-  .nav-menu {
+  .nav-bar__menu-content {
     display: block;
-    padding-top: 7px;
-    padding-right: 5px;
-    padding-bottom: 8px;
   }
+}
+
+.nav-bar__menu-content--is-visible {
+  display: block;
 }
 
 .about {
 	width: 100%;
 	background: #f2f2f2;
-	margin-top: -2.5rem;
-	margin-bottom: 6rem;
-	z-index: 1;
+	padding-top: 2.5rem;
+	padding-bottom: 6rem;
 	
 }
 
@@ -662,14 +703,14 @@ body {
 @media (max-width:599px) {
 
   .about {
-    margin-top: -1.7rem;
+    padding-top: 1rem;
   }
 }
 
 @media (min-width:1200px) {
 
   .about {
-    margin-top: -2rem;
+    padding-top: 2rem;
   }
 }
 
@@ -706,10 +747,30 @@ body {
 
 .about__description-pink {
   color:#ff00cc;
-  font-size: 8rem;
-  font-weight: 400;
-  margin-top: -1.5rem;
-  margin-bottom: -.5rem;
+  font-size: 5.25rem;
+  float: right;
+  padding-top: 2.5rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+  display: inline-table;
+}
+
+@media (min-width:600px) {
+
+  .about__description-pink {
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width:1200px) {
+
+  .about__description-pink {
+    font-size: 10rem;
+  }
+}
+
+.about__description-pink h2 {
+  font-weight: 200;
 }
 
 .about__hr {
@@ -755,8 +816,8 @@ body {
 }
 
 .about__image {
-  width: 60%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 150px;
   border-radius: 250px;
   position: relative;
   top: 0px;
@@ -772,6 +833,7 @@ body {
 
 .about__row {
   padding-top: 1rem;
+  max-width: 1000px;
 }
 
 @media (max-width:599px) {
@@ -810,6 +872,19 @@ body {
   }
 }
 
+.about__row-12 {
+  float: right;
+  margin-top: -8rem;
+  margin-bottom: -4rem;
+}
+
+@media (min-width:1200px) {
+
+  .about__row-12 {
+    margin-right: 4.5rem;
+  }
+}
+
 .row {
 	
 }
@@ -818,7 +893,6 @@ body {
 	width: 100%;
 	margin-top: 8rem; 
 	margin-bottom: 8rem;
-	
 		
 }
 
@@ -905,7 +979,7 @@ body {
 
   .portfolio__responsive {
     width: 47.999%;
-    margin: 6px 4px;
+    margin: 6px 5px;
   }
 }
 
@@ -913,6 +987,7 @@ body {
 
   .portfolio__responsive {
     width: 32%;
+    margin: 6px 6px;
   }
 }
 
@@ -953,23 +1028,27 @@ body {
 }
 
 .portfolio h4 {
-  color: #fff;
-  font-weight: 400;
+  color: #000;
+  font-weight: 700;
   font-size: 1rem;
   text-align: left;
   padding-left: 10px;
   margin-bottom: 0px;
-  margin-top: 11px;
+  margin-top: 10px;
 }
 
 .portfolio p {
-  color: #fff;
+  color: #000;
   font-weight: 200;
   font-size: .7rem;
   text-align: left;
   padding-left: 10px;
   margin-top: 2px;
   text-transform: uppercase;
+}
+
+.portfolio__contact-form {
+	
 }
 
 .footer {

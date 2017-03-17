@@ -9,9 +9,7 @@
 	<meta name="description" content="Graphic Designer, Photographer, and Web Developer">
 	
 	<!--INSERT LINK TO CSS FILE HERE-->
-	<link rel="stylesheet" type="text/css" href="../temp/styles/styles.css">
-	<!--INSERT LINK TO JS FILE HERE-->
-	
+	<link rel="stylesheet" href="../temp/styles/styles.css">
 	<!--INSERT ANY OTHER DEPENDENCIES HERE-->
 	
 </head>
@@ -19,8 +17,7 @@
 	<header>
 	<nav class="nav-bar">
 		<div class="nav-bar__hold">
-			<a href="#" class="nav-bar__logo"></a>
-			<a id="nav-menu" class="nav-menu">&#9677; </a>
+			<div class="nav-bar__menu-icon">&#9677;</div>
 			<ul class="nav-bar__list" id="nav">
 				<li class="nav-bar__list-item"> 
 					<a class="nav-bar__link" href="#about">About</a>
@@ -29,18 +26,18 @@
 					<a class="nav-bar__link nav-bar__link-sub" href="#design">Projects</a>
 						<ul class="nav-bar__sub-list">
 							<li class="nav-bar__sub-item">
-								<a href="#">Design</a>
+								<a href="../design/index.html">Design</a>
 							</li>
 							<li class="nav-bar__sub-item">
-								<a href="#">Photo</a>
+								<a href="../photo/index.html">Photo</a>
 							</li>
 							<li class="nav-bar__sub-item">
-								<a href="#">Web</a>
+								<a href="../web/index.html">Web</a>
 							</li>
 						</ul>
 				</li>
 				<li class="nav-bar__list-item"> 
-					<a class="nav-bar__link nav-bar__link-last" href="#contact">Contact</a>
+					<a class="nav-bar__link nav-bar__link-last" href="../contact/index.html">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -60,8 +57,10 @@
 				<h3 class="about__description-terms">Brand Identity, Print + UX Design</h3>
 			</div>
 		</div>
-		<div class="about__hold about__row">
-			<h2 class="about__description-pink">&#9677;</h2>
+		<div class="about__hold about__row about__row-12">
+			<div class="about__description-pink">
+				<h2>&#9677;</h2>
+			</div>
 		</div>
 	</div>
 	
@@ -76,17 +75,97 @@
 		<div class="portfolio__responsive">
 				<div class="portfolio__gallery">
 					<div class="portfolio__gallery--img">
-						<a href="/design/index.html">
+						<a target="_blank" href="../assets/images/design/casn_secondary_fullcolor-med.png">
+							<img src="../assets/images/design/casn_secondary_fullcolor-small.png" alt="" width="600" height="400">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__responsive">
+				<div class="portfolio__gallery">
+					<div class="portfolio__gallery--img">
+						<a target="_blank" href="../assets/images/design/casn_symbol_pattern-med.png">
+							<img src="../assets/images/design/casn_symbol_pattern-small.png" alt="" width="600" height="400">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__responsive">
+				<div class="portfolio__gallery">
+					<div class="portfolio__gallery--img">
+						<a target="_blank" href="../assets/images/design/casn_logo_primary_onecolor-med.png">
 							<img src="../assets/images/design/casn_logo_primary_onecolor-small.png" alt="" width="600" height="400">
 						</a>
 					</div>
 				</div>
 			</div>
-		<div class="portfolio__responsive">
+			<div class="portfolio__responsive">
 				<div class="portfolio__gallery">
 					<div class="portfolio__gallery--img">
-						<a href="/design/index.html">
-							<img src="../assets/images/design/casn_secondary_fullcolor-small.png" alt="" width="600" height="400">
+						<a target="_blank" href="../assets/images/design/casn_businesscard-med.png">
+							<img src="../assets/images/design/casn_businesscard-small.png" alt="" width="600" height="400">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio">
+		<div class="portfolio__hold">
+		  <h3 class="portfolio__headline-sub">Matthew Hedgepath, Woodworker</h3>
+			<hr class="portfolio__hr-light"></hr>
+		</div>
+		<div class="portfolio__hold">
+			<div class="portfolio__responsive">
+				<div class="portfolio__gallery">
+					<div class="portfolio__gallery--img">
+						<a target="_blank" href="../assets/images/design/mhw_logo-med.png">
+							<img src="../assets/images/design/mhw_logo-small.png" alt="" width="600" height="400">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__responsive">
+				<div class="portfolio__gallery">
+					<div class="portfolio__gallery--img">
+						<a target="_blank" href="../assets/images/design/mhw_businesscard-med.jpg">
+							<img src="../assets/images/design/mhw_businesscard-small.jpg" alt="" width="600" height="400">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__responsive">
+				<div class="portfolio__gallery">
+					<div class="portfolio__gallery--img">
+						<a target="_blank" href="../assets/images/design/mhw_letterhead-med.jpg">
+							<img src="../assets/images/design/mhw_letterhead-small.jpg" alt="" width="600" height="400">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="portfolio">
+		<div class="portfolio__hold">
+		  <h3 class="portfolio__headline-sub">Chubby Vegan</h3>
+			<hr class="portfolio__hr-light"></hr>
+		</div>
+		<div class="portfolio__hold">
+			<div class="portfolio__responsive">
+				<div class="portfolio__gallery">
+					<div class="portfolio__gallery--img">
+						<a target="_blank" href="../assets/images/design/chubbyvegan_identity-med.png">
+							<img src="../assets/images/design/chubbyvegan_identity-small.png" alt="" width="600" height="400">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__responsive">
+				<div class="portfolio__gallery">
+					<div class="portfolio__gallery--img">
+						<a target="_blank" href="../assets/images/design/chubbyvegan_packaging-med.png">
+							<img src="../assets/images/design/chubbyvegan_packaging-small.png" alt="" width="600" height="400">
 						</a>
 					</div>
 				</div>
@@ -103,23 +182,18 @@
 			<div class="footer__text">
 				<div class="footer__links">
 					<div class="footer__icon">
-						<a href="">
+						<a href="https://github.com/morepreciousthanprecious">
 							<img src="/assets/images/github-icon.png">
 						</a>
 					</div>
 					<div class="footer__icon">
-						<a href="">
+						<a href="https://www.instagram.com/touchmystone/">
 							<img src="/assets/images/instagram-icon.png">
 						</a>
 					</div>
 					<div class="footer__icon">
-						<a href="">
+						<a href="https://www.linkedin.com/in/jaclyn-touchstone-b4b44722/">
 							<img src="/assets/images/linkedin-icon.png">
-						</a>
-					</div>
-					<div class="footer__icon">
-						<a href="">
-							<img src="/assets/images/twitter-icon.png">
 						</a>
 					</div>
 				</div>
@@ -137,7 +211,7 @@
 			</div>
 		</div>
 	</footer>
-
-		<!--INSERT JS BUILD HERE-->
+	<!--INSERT JS BUILD HERE-->
+	<script src="../temp/scripts/App.js"></script> 
 </body>
 </html>
