@@ -7,7 +7,7 @@
 	@mixin clearfix;
 	
 	@mixin atSmall {
-		padding-top: 1rem;
+		padding-top: 5rem;
 	}
 	
 	@mixin atLarge {

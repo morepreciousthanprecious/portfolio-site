@@ -1,6 +1,8 @@
 .nav-bar {
 	width: 100%;
 	background: #ff00cc;
+	position: fixed;
+	z-index: 1;
 		&:before, &:after {
 		box-sizing: border-box;
 		margin: px;

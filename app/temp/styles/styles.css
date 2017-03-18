@@ -468,6 +468,8 @@ body {
 .nav-bar {
 	width: 100%;
 	background: #ff00cc;
+	position: fixed;
+	z-index: 1;
 		
 }
 
@@ -602,7 +604,7 @@ body {
 @media (max-width:599px) {
 
   .about {
-    padding-top: 1rem;
+    padding-top: 5rem;
   }
 }
 
