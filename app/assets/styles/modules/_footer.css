@@ -24,16 +24,8 @@
 		}
 	}
 	
-	&__icon {
-		padding: 2px;
-		display: inline-block;
-	}
 
 	/* resize icon */
-	&__icon img {
-		width: 75%;
-		height: auto;
-	}
 	
 	&__text-subdued {
 		color: #000;

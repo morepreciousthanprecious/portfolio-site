@@ -966,17 +966,7 @@ body {
   }
 }
 
-.footer__icon {
-  padding: 2px;
-  display: inline-block;
-}
-
 /* resize icon */
-
-.footer__icon img {
-  width: 75%;
-  height: auto;
-}
 
 .footer__text-subdued {
   color: #000;
@@ -985,4 +975,10 @@ body {
 .footer p {
   font-size: .6rem;
   font-weight: 400;
+}
+
+.icon {
+	padding: 5px;
+	display: inline-block;
+		
 }
