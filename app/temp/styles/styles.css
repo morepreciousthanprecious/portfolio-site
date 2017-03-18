@@ -648,17 +648,29 @@ body {
 
 .about__description-pink {
   margin-bottom: ;
-  padding-right: 1rem;
+  padding-right: rem;
   padding-top: ;
-  width: 300px;
+  float: right;
+  width: 200px;
 }
 
 @media (min-width:600px) {
-	
+
+  .about__description-pink {
+    width: 300px;
+  }
 }
 
 @media (min-width:1200px) {
-	
+
+  .about__description-pink {
+    width: 350px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
+  }
 }
 
 .about__hr {

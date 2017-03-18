@@ -41,16 +41,24 @@
 	
 	&__description-pink {
 		margin-bottom: ;
-		padding-right: 1rem;
+		padding-right: rem;
 		padding-top: ;
-		width: 300px;
+		float: right;
+		width: 200px;
 		
 		
 		
 		@mixin atMedium {
+			width: 300px;
 		}
 		
 		@mixin atLarge {
+			width: 350px;
+			float: none;
+			margin-right: auto;
+			margin-left: auto;
+			padding-left: auto;
+			padding-right: auto;
 		}
 		
 
