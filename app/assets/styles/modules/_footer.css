@@ -1,6 +1,6 @@
 .footer {
-	color: #fff;
-	background-color: #000;
+	color: #000;
+	background-color: $mainLightGrey;
 	
 
 	&:before, &:after {
@@ -36,7 +36,7 @@
 	}
 	
 	&__text-subdued {
-		color: #4f4f4f;
+		color: #000;
 	}
 	
 	p {
