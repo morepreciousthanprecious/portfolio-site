@@ -105,6 +105,7 @@ var NavMenu = function () {
 		key: "toggleTheMenu",
 		value: function toggleTheMenu() {
 			this.menuList.toggleClass("nav-bar__list--is-visible");
+			this.menuIcon.toggleClass("nav-bar__menu-icon--animate");
 		}
 	}]);
 
