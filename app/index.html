@@ -18,7 +18,18 @@
 	<header>
 	<nav class="nav-bar">
 		<div class="nav-bar__hold">
-			<div class="nav-bar__menu-icon"><img src="assets/images/touchstone-logo-white.svg"></div>
+			<div class="nav-bar__row">
+				<div class="nav-bar__row-8">
+					<div class="nav-bar__logo">
+						<a class="nav-bar__logo-link" href="./index.html">Jaclyn Touchstone</a>
+					</div>
+				</div>
+				<div class="nav-bar__row-4">
+					<div class="nav-bar__menu-icon">
+						<img src="assets/images/touchstone-logo-white.svg">
+					</div>
+				</div>
+			</div>
 			<ul class="nav-bar__list" id="nav">
 <!--ADD ABOUT LINK ONCE ABOUT PAGE & BIO IS BUILT
 				<li class="nav-bar__list-item"> 
@@ -46,39 +57,34 @@
 							
 						
 	
-	<div class="about" id="about">
-		<div class="about__hold">
-			<h2 class="about__description">Jaclyn Touchstone</h2>
-			<hr class="about__hr"></hr>
-		</div>
-		<div class="about__hold about__row">
-			<div class="about__row-4">
-				<img class="about__image" src="assets/images/headshot-square.jpg">
-			</div>
-			<div class="about__row-8">
-				<h3 class="about__description-terms">Design, Photography, and Front End Web Development</h3>
-			</div>
-		</div>
-		<div class="about__hold about__row about__row-12">
-			<div class="about__description-pink">
-				<object type="image/svg+xml" data="assets/images/touchstone-logo.svg">
-					Your browser does not support SVG
-				</object>
+	<div class="about">
+		<picture>
+      <source srcset="assets/images/pink-clouds_xl.jpg 1920w, assets/images/pink-clouds_xl-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+      <source srcset="assets/images/pink-clouds_lg.jpg 1380w, assets/images/pink-clouds_lg-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+      <source srcset="assets/images/pink-clouds_md.jpg 990w, assets/images/pink-clouds_md-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+      <img srcset="assets/images/pink-clouds_sm.jpg 640w, assets/images/pink-clouds_sm-hi-dpi.jpg 1280w" alt="Horizon view of pink clouds at sunset" class="about_image">
+    </picture>
+		
+		<div class="about__text">
+			<div class="wrapper">
+				<h3 class="about__description">Hi! I'm Jaclyn.</h3>
+				<p class="about__description-text"> I am a freelance Graphic Designer, Photographer, and Front-End Web Developer from Texas.</p>
+				<a href="#portfolio">
+					<img class="about__icon" src="assets/images/down-arrow.png">
+				</a>
 			</div>
 		</div>
 	</div> 
 	
-	<div class="portfolio">
+	<div class="portfolio" id="portfolio">
 		<div class="portfolio__hold">
-			<h2 class="portfolio__headline">Projects</h2>
-			<hr class="portfolio__hr"></hr> 
-		</div>
-		<div class="portfolio__hold">
+		<br><br>
+		<h3></h3><br>
 			<div class="portfolio__responsive">
 				<div class="portfolio__gallery">
 					<div class="portfolio__gallery--img">
 						<a href="./design/index.html">
-							<img src="assets/images/design/casn_symbol_pattern-small.png" alt="" width="600" height="400">
+							<img src="assets/images/design/chubbyvegan_identity-small.png" alt="" width="600" height="400">
 						</a>
 					</div>
 					<div class="portfolio__desc">
@@ -104,7 +110,7 @@
 				<div class="portfolio__gallery">
 					<div class="portfolio__gallery--img">
 						<a href="./web/index.html">
-							<img src="assets/images/design/chubbyvegan_identity-small.png" alt="" width="600" height="400">
+							<img src="assets/images/mhw-site.png" alt="" width="600" height="400">
 						</a>
 					</div>
 					<div class="portfolio__desc">

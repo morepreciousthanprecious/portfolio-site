@@ -1,6 +1,6 @@
 .nav-bar {
 	width: 100%;
-	background: #ff00cc;
+	background: #000;
 	position: fixed;
 	z-index: 1;
 		&:before, &:after {
@@ -17,6 +17,45 @@
 		overflow: hidden;
 		}
 		
+		&__row {
+			width: 100%;
+			max-width: 1000px;
+		}
+		
+		&__row-4 {
+			width: 15%;
+			float: right;
+		}
+		
+		&__row-8 {
+			width: 75%;
+			float: left;
+			
+			@mixin atMedium {
+				width: 39%;
+			}
+		}
+
+		&__logo-link {
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.25rem;
+			font-weight: 400;
+			padding: 1.12rem;
+			margin-top: .4rem;
+			display: inline-block;
+			
+			@mixin atMedium {
+				padding: 12px;
+			}
+			
+			@mixin atLarge {
+				font-size: 1.6rem;
+				font-weight: 700;
+				padding: 12px 7px;
+			}
+		}
+		
 		&__menu-icon {
 		float: right;
 		margin-top: .45rem;
@@ -27,7 +66,7 @@
 		@mixin atSmall {
 			display: block;
 			padding-top: 7px;
-			padding-right: 5px;
+			padding-right: 1.12rem;
 			padding-bottom: 8px;
 		}
 		
@@ -64,9 +103,10 @@
 		
 		&--is-visible {
 			display: block;
+			float: right;
 			
 			@mixin atSmall {
-				margin-bottom: .35rem;
+				margin-top: .4rem;
 			}
 		}
 	}
@@ -87,13 +127,13 @@
 		color: #fff;
 		text-decoration: none;
 		font-size: 1rem;
-		font-weight: 700;
+		font-weight: 200;
 		display: block;
 		
 		
 		@mixin atMedium {
 			font-size: 1.18rem;
-			font-weight: 700;
+			font-weight: 200;
 			padding: 12px 12px;
 		}
 		

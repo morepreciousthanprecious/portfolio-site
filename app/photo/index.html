@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link href="https://fonts.googleapis.com/css?family=Overpass:200,400,700,900" rel="stylesheet">
 	<title>Jaclyn Touchstone</title>
-	<meta name="keywords" content="graphic design, photography, web developer, UI design, UX design">
-	<meta name="description" content="Graphic Designer, Photographer, and Web Developer">
+	<meta name="keywords" content="graphic design, photography, web developer, UI design, UX design" />
+	<meta property="og:image" content="../assets/images/touchstone-logo-pink.svg" />
+	<meta name="description" content="Graphic Designer, Photographer, and Web Developer" />
 	
 	<!--INSERT LINK TO CSS FILE HERE-->
 	<link rel="stylesheet" href="../temp/styles/styles.css">
@@ -17,7 +18,18 @@
 	<header>
 	<nav class="nav-bar">
 		<div class="nav-bar__hold">
-			<div class="nav-bar__menu-icon"><img src="../assets/images/touchstone-logo-white.svg"></div>
+			<div class="nav-bar__row">
+				<div class="nav-bar__row-8">
+					<div class="nav-bar__logo">
+						<a class="nav-bar__logo-link" href="../index.html">Jaclyn Touchstone</a>
+					</div>
+				</div>
+				<div class="nav-bar__row-4">
+					<div class="nav-bar__menu-icon">
+						<img src="../assets/images/touchstone-logo-white.svg">
+					</div>
+				</div>
+			</div>
 			<ul class="nav-bar__list" id="nav">
 <!--ADD ABOUT LINK ONCE ABOUT PAGE & BIO IS BUILT
 				<li class="nav-bar__list-item"> 
@@ -36,7 +48,7 @@
 				<li class="nav-bar__list-item"> 
 					<a class="nav-bar__link nav-bar__link-last" href="../contact/index.html">Contact</a>
 				</li>
-			</ul>
+			</ul> 
 		</div>
 	</nav>
 	</header>
@@ -48,18 +60,18 @@
 		</div>
 		<div class="about__hold about__row">
 			<div class="about__row-4">
-				<img class="about__image" src="../assets/images/headshot-square.jpg">
+				<h3 class="about__description-terms">Photo</h3>
 			</div>
 			<div class="about__row-8">
-				<h3 class="about__description-terms">Product, Conceptual, and Commercial Photography</h3>
+				<div class="about__description-pink">
+					<object type="image/svg+xml" data="../assets/images/touchstone-logo.svg">
+					Your browser does not support SVG
+					</object>
+				</div>
 			</div>
 		</div>
 		<div class="about__hold about__row about__row-12">
-			<div class="about__description-pink">
-				<object type="image/svg+xml" data="../assets/images/touchstone-logo.svg">
-					Your browser does not support SVG
-				</object>
-			</div>
+			
 		</div>
 	</div>
 	
@@ -72,30 +84,34 @@
 		</div>
 		<div class="portfolio__hold">
 		<div class="portfolio__responsive">
+			<div class="portfolio__gallery">
+				<img src="../assets/images/photo/product/mhw-cuttingboard.jpg" alt="">
+			</div>
+		</div>
+			<div class="portfolio__responsive">
 				<div class="portfolio__gallery">
-					<div class="portfolio__gallery--img">
-						<a target="_blank" href="../assets/images/photo/product/mhw-cuttingboard.jpg">
-							<img src="../assets/images/photo/product/mhw-cuttingboard.jpg" alt="" width="600" height="400">
-						</a>
-					</div>
+					<img src="../assets/images/photo/product/mhw-hotpot-holder1.jpg" alt="">
 				</div>
 			</div>
 			<div class="portfolio__responsive">
 				<div class="portfolio__gallery">
-					<div class="portfolio__gallery--img">
-						<a target="_blank" href="../assets/images/photo/product/mhw-hotpot-holder1.jpg">
-							<img src="../assets/images/photo/product/mhw-hotpot-holder1.jpg" alt="" width="600" height="400">
-						</a>
-					</div>
+					<img src="../assets/images/photo/product/mhw-hotpot-holder2.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="portfolio__hold">
+			<h3 class="portfolio__headline-sub">Product</h3>
+			<hr class="portfolio__hr-light"></hr>
+		</div>
+		<div class="portfolio__hold">
+			<div class="portfolio__responsive">
+				<div class="portfolio__gallery">
+					<img src="../assets/images/photo/product/mhw-hotpot-holder2.jpg" alt="">
 				</div>
 			</div>
 			<div class="portfolio__responsive">
 				<div class="portfolio__gallery">
-					<div class="portfolio__gallery--img">
-						<a target="_blank" href="../assets/images/photo/product/mhw-hotpot-holder2.jpg">
-							<img src="../assets/images/photo/product/mhw-hotpot-holder2.jpg" alt="" width="600" height="400">
-						</a>
-					</div>
+					<img src="../assets/images/photo/product/mhw-hotpot-holder2.jpg" alt="">
 				</div>
 			</div>
 		</div>

@@ -1,119 +1,81 @@
 .about {
-	width: 100%;
-	background: #f2f2f2;
-	padding-top: 2.5rem;
+	position: relative;
 	padding-bottom: 6rem;
 
-	@mixin clearfix;
-	
-	@mixin atSmall {
-		padding-top: 5rem;
-	}
-	
-	@mixin atLarge {
-		padding-top: 2rem;
+	&__image {
+		display: block;
 	}
 
-	&__hold {
-		width: 90%;
-		max-width: 1000px;
-		margin: 0 auto;
+	&__text {
+		padding-top: 12rem;
+		position: absolute;
+		top: 25%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		text-align: center;
+		
+		@mixin atMedium {
+			padding-top: 120px;
+		}
 	}
 	
 	&__description {
 		color: #000;
-		font-size: 3rem;
-		font-weight: 700;
-		padding-top: 3rem;
-		margin-bottom: -.3rem;
-		
-		@mixin atSmall {
-			font-size: 2rem;
-			padding-top: 2rem;
-			margin-bottom: -.25rem;
-		}
-		
-		@mixin atLarge {
-			font-size: 3.5rem;
-			margin-top: 2rem;
-		}
-	}
-	
-	&__description-pink {
-		margin-bottom: ;
-		padding-right: rem;
-		padding-top: ;
-		float: right;
-		width: 200px;
-		
-		
-		
-		@mixin atMedium {
-			width: 300px;
-		}
-		
-		@mixin atLarge {
-			width: 350px;
-			float: none;
-			margin-right: auto;
-			margin-left: auto;
-			padding-left: auto;
-			padding-right: auto;
-		}
-		
-
-	}
-		
-	&__hr {
-		border: 0;
-		height: 4px;
-		background-color:#fff;
-		
-		@mixin atSmall {
-			height: 3px;
-		}
-	}
-	
-	&__description-terms {
-		color: #000;
 		font-size: 1.75rem;
 		font-weight: 700;
-		text-align: right;
-		float: right;
-		padding-top: 0px;
 		
 		@mixin atSmall {
-			font-size: 1.2rem;
-			font-weight: 400;
-			text-align: right;
-			margin-top: auto;
-			margin-bottom: auto;
-			margin-right: 10px;
+			font-size: 2.4rem;
+			font-weight: 700;
 		}
 		
 		@mixin atMedium {
-			font-size: 1.59rem;
-			margin-top: 1.2rem;
+			font-size: 3rem;
+			font-weight: 900;
 		}
 		
-	}
-
-	&__image {
-		width: 100%;
-		max-width: 150px;
-		border-radius: 250px;
-		position: relative;
-		top: 0px;
-		left: 0px;
-		
-		
-		@mixin atSmall {
-			width: 80%;
+		@mixin atLarge {
+			font-size: 4rem;
+			font-weight: 900;
 		}
 	}
 	
+	&__description-text {
+		font-size: 1.2rem;
+		font-weight: 200;
+		padding-left: 32px;
+		padding-right: 32px;
+		
+		@mixin atMedium {
+			font-size: 1.4rem;
+			padding-left: 80px;
+			padding-right: 80px;
+		}
+		
+		@mixin atLarge {
+			padding-left: 300px;
+			padding-right: 300px;
+		}
+	}
+	
+	&__icon {
+		width: 15%;
+		max-width: 32px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 6rem;
+		padding-left:auto;
+		padding-right: auto;
+		
+		@mixin atMedium {
+			margin-top: 2.5rem;
+		}
+	}
+
+
+	
 	&__row {
-		padding-top: rem;
 		max-width: 1000px;
 		
 		@mixin atSmall {
