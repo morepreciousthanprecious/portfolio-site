@@ -2,60 +2,9 @@
 	width: 100%;
 	margin-top: 8rem; 
 	margin-bottom: 8rem;
+	padding-top: .5rem;
 	
 	@mixin clearfix;
-	
-	&__hold {
-		width: 90%;
-		max-width: 1000px;
-		margin: 8rem auto;
-	}
-	
-	&__headline {
-		color: #000;
-		text-transform: none;
-		font-weight: 700;
-		font-size: 1.82rem;
-		
-		@mixin atSmall {
-			font-size: 1.5rem;
-		}
-	}
-	
-		
-	&__headline-sub {
-		color: #000;
-		font-weight: 400;
-		font-size: 1.3rem;
-		text-align: left;
-		padding-top: .8rem;
-		margin-top: 3rem;
-		margin-bottom: -.25rem;
-		
-		@mixin atMedium {
-			text-align: left;
-		}
-		
-		@mixin atLarge {
-			text-align: left;
-		}
-		}
-
-		
-	&__hr {
-		border: 0;
-		height: 2px;
-		background-color: #000;
-		margin-bottom: 5rem;
-		margin-top: 1rem;
-	}
-	
-	&__hr-light {
-		border:0;
-		height: 2px;
-		background-color: #ccc;
-		margin-bottom: 1.5rem;
-	}
 	
 	&__responsive {
 		padding: 0 0px;
@@ -105,11 +54,7 @@
 	}
 	
 	&__desc {
-		padding: 5px;
-		text-align: center;
-		font-size: .8rem;
-		color: #000;
-		font-weight: 200;
+		padding: 4px;
 	}
 	
 	h4{
@@ -117,9 +62,13 @@
 		font-weight: 700;
 		font-size: 1rem;
 		text-align: left;
+		text-transform: ;
 		padding-left: 10px;
 		margin-bottom: 0px;
 		margin-top: 10px;
+		
+		@mixin atMedium {
+		}
 	}
 	
 	

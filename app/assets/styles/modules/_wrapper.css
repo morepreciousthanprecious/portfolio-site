@@ -7,4 +7,12 @@
 		padding-left: 72px;
 		padding-right: 72px;
 	}
+	
+	&__container {
+		width: 90%;
+		max-width: 1000px;
+		margin: -4rem auto;
+	}
+	
+
 }

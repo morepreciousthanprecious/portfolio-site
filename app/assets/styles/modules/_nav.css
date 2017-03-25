@@ -6,7 +6,7 @@
 		&:before, &:after {
 		box-sizing: border-box;
 		margin: px;
-		padding: 0px;
+		padding: px;
 		list-style: none;
 	}
 	
@@ -152,4 +152,157 @@
 		
 }
 
+.nav-bar--sub {
+	width: 100%;
+	background: #000;
+	position: relative;
+	z-index: 1;
+		&:before, &:after {
+		box-sizing: border-box;
+		margin: px;
+		padding: px;
+		list-style: none;
+	}
+	
+		&__hold {
+		width: 99%;
+		max-width: 1000px;
+		margin: 0 auto;
+		overflow: hidden;
+		}
+		
+		&__row {
+			width: 100%;
+			max-width: 1000px;
+		}
+		
+		&__row-4 {
+			width: 15%;
+			float: right;
+		}
+		
+		&__row-8 {
+			width: 75%;
+			float: left;
+			
+			@mixin atMedium {
+				width: 39%;
+			}
+		}
 
+		&__logo-link {
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.25rem;
+			font-weight: 400;
+			padding: 1.12rem;
+			margin-top: .4rem;
+			display: inline-block;
+			
+			@mixin atMedium {
+				padding: 12px;
+			}
+			
+			@mixin atLarge {
+				font-size: 1.6rem;
+				font-weight: 700;
+				padding: 12px 7px;
+			}
+		}
+		
+		&__menu-icon {
+		float: right;
+		margin-top: .45rem;
+		padding: 10px;
+		display: none;
+		width: 36px;
+		
+		@mixin atSmall {
+			display: block;
+			padding-top: 7px;
+			padding-right: 1.12rem;
+			padding-bottom: 8px;
+		}
+		
+		img {
+			transition: transform .3s ease-out;
+		}		
+
+	}
+	
+	&__menu-icon--animate {
+		img {
+			transform: rotate(-90deg);
+			transition: transform .3s ease-out;
+		}
+	}
+		
+
+	
+	&__list {
+		list-style: none;
+		float: right;
+		display: none;
+		
+		@mixin atMedium {
+			display: block;
+			margin: auto;
+			padding-top: 5px;
+		}
+		
+		@mixin atLarge {
+			margin: auto;
+			padding-top: 8px;
+		}
+		
+		&--is-visible {
+			display: block;
+			float: right;
+			
+			@mixin atSmall {
+				margin-top: .4rem;
+			}
+		}
+	}
+
+	&__list-item {
+		float: left;
+		
+		@mixin atSmall {
+			margin-top: .5rem;
+			padding-bottom: 8px;
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+	}
+	
+	
+	&__link {
+		color: #fff;
+		text-decoration: none;
+		font-size: 1rem;
+		font-weight: 200;
+		display: block;
+		
+		
+		@mixin atMedium {
+			font-size: 1.18rem;
+			font-weight: 200;
+			padding: 12px 12px;
+		}
+		
+		@mixin atLarge {
+			font-size: 1.5rem;
+			padding: 7px 40px;
+		}
+	}
+	
+
+	&__link-last {
+		@mixin atLarge {
+			padding-right: 0;
+		}
+	}
+		
+	
+}

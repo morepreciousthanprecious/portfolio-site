@@ -2,9 +2,6 @@
 	position: relative;
 	padding-bottom: 6rem;
 
-	&__image {
-		display: block;
-	}
 
 	&__text {
 		padding-top: 12rem;
@@ -71,53 +68,6 @@
 		@mixin atMedium {
 			margin-top: 2.5rem;
 		}
-	}
-
-
-	
-	&__row {
-		max-width: 1000px;
-		
-		@mixin atSmall {
-			margin-bottom: 1rem;
-
-		}
-		
-		&-4 {
-			float: left;
-			width: 30%;
-			padding-bottom: -1rem;
-			
-			@mixin atSmall {
-				width: 30%;
-			}
-		}
-
-		&-8 {
-			float: right;
-			width: 60%;
-			padding-bottom: 1rem;
-
-			
-			@mixin atSmall {
-				width: 60%;
-				float: right;
-				padding-top: 5px;
-				padding-bottom: 5px;
-
-			}
-		}
-		
-		&-12 {
-			float: right;
-			margin-top: rem;
-			margin-bottom: rem;
-			
-			@mixin atLarge {
-				margin-right: 4.5rem;
-			}
-		}
-		
 	}
 	
 }
