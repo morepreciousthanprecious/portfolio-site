@@ -152,7 +152,7 @@
 		
 }
 
-.nav-bar--sub {
+.nav-bar-sub {
 	width: 100%;
 	background: #000;
 	position: relative;
@@ -256,8 +256,16 @@
 		}
 		
 		&--is-visible {
+			position: realtive;
 			display: block;
 			float: right;
+			z-index: 1;
+				&:before, &:after {
+				box-sizing: border-box;
+				margin: px;
+				padding: px;
+				list-style: none;
+			}
 			
 			@mixin atSmall {
 				margin-top: .4rem;
