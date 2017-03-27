@@ -1,0 +1,46 @@
+.gallery {
+	width: 100%;
+	max-width: 1000px;
+	margin-top: 8rem;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@mixin clearfix;
+	
+	&__text {
+		margin-top: 12rem;
+		margin-left: 5px;
+		width: 100%;
+		
+		@mixin atMedium {
+			width: 65%;
+		}
+		
+	}
+	
+	&__heading {
+		font-size: 1.45rem;
+	}
+	
+	&__desc {
+		line-height: 1.4rem;
+	}
+	
+	&__gallery {
+		border: 0px solid #fff;
+		background-color: rgba(255, 255, 255, 1);
+		
+		
+		
+		@mixin atLarge {
+		}
+		
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 560px;
+			
+		}
+	}
+
+}

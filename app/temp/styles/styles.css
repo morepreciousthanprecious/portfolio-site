@@ -957,7 +957,7 @@ body {
 	width: 100%;
 	margin-top: 8rem; 
 	margin-bottom: 8rem;
-	padding-top: .5rem;
+	padding-top: 5rem;
 	position: relative;
 		
 }
@@ -1128,4 +1128,55 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: -4rem auto;
+}
+
+.gallery {
+	width: 100%;
+	max-width: 1000px;
+	margin-top: 8rem;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.gallery::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.gallery__text {
+  margin-top: 12rem;
+  margin-left: 5px;
+  width: 100%;
+}
+
+@media (min-width:600px) {
+
+  .gallery__text {
+    width: 65%;
+  }
+}
+
+.gallery__heading {
+  font-size: 1.45rem;
+}
+
+.gallery__desc {
+  line-height: 1.4rem;
+}
+
+.gallery__gallery {
+  border: 0px solid #fff;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width:1200px) {
+	
+}
+
+.gallery__gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
 }
