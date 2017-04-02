@@ -1010,7 +1010,6 @@ body {
 .portfolio__gallery img {
   width: 100%;
   height: auto;
-  max-height: 560px;
 }
 
 .portfolio__img-link {
