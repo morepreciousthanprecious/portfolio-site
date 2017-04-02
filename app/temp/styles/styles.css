@@ -1158,7 +1158,8 @@ body {
 }
 
 .gallery__heading {
-  font-size: 1.45rem;
+  font-size: 2.45rem;
+  font-weight: 900;
 }
 
 .gallery__desc {
@@ -1178,4 +1179,69 @@ body {
   width: 100%;
   height: auto;
   max-height: 560px;
+}
+
+.contact {
+	margin-top: 5rem;
+	margin-left: 5px;
+	margin-right: auto;
+	max-width: 400px;
+	
+	
+	
+}
+
+.contact__link {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact__form {
+	
+}
+
+.contact__form--input {
+  width: 100%;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.btn {
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+}
+
+.btn__send {
+  background-color: black;
+  color: #fff;
+  padding: 5px 10px;
+  width: 49%;
+  border-radius: 6px;
+  border: 0px;
+  margin: 0;
+}
+
+@media (min-width:600px) {
+
+  .btn__send {
+    width: 49.5%;
+  }
+}
+
+.btn__reset {
+  background-color: #d3d3d3;
+  color: #000;
+  padding: 5px 10px;
+  width: 49%;
+  border-radius: 6px;
+  border: 0px;
+  margin: 0;
+}
+
+@media (min-width:600px) {
+
+  .btn__reset {
+    width: 49.5%;
+  }
 }
