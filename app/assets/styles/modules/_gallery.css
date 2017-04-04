@@ -24,7 +24,8 @@
 	}
 	
 	&__desc {
-		line-height: 1.4rem;
+		line-height: 1rem;
+		font-size: 0.95rem;
 	}
 	
 	&__gallery {
