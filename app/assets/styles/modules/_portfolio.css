@@ -1,0 +1,98 @@
+.portfolio {
+	width: 100%;
+	margin-top: 8rem; 
+	margin-bottom: 8rem;
+	padding-top: 5rem;
+	position: relative;
+	
+	@mixin clearfix;
+	
+	&__responsive {
+		padding: 0 0px;
+		float: left;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+		margin-bottom: 1rem;
+		
+		@mixin atSmall {
+			width: 100%;
+		}
+		
+		@mixin atMedium {
+			width: 47.999%;
+			margin: 6px 5px;
+		}
+		
+		@mixin atLarge {
+			width: 32%;
+			margin: 6px 6px;
+			
+		}
+	}
+	
+	&__gallery {
+		border: 0px solid #fff;
+		background-color: rgba(255, 255, 255, 1);
+		
+		
+		
+		@mixin atLarge {
+		}
+		
+		img {
+			width: 100%;
+			height: auto;
+
+			
+		}
+	}
+	
+	&__img-link {
+		
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	&__desc {
+		padding: 4px;
+	}
+	
+	h4{
+		color: #000;
+		font-weight: 700;
+		font-size: 1rem;
+		text-align: left;
+		text-transform: ;
+		padding-left: 10px;
+		margin-bottom: 0px;
+		margin-top: 10px;
+		
+		@mixin atMedium {
+		}
+	}
+	
+	
+	p {
+		color: #000;
+		font-weight: 200;
+		font-size: .7rem;
+		text-align: left;
+		padding-left: 10px;
+		margin-top: 2px;
+		text-transform: uppercase;
+		
+
+	}
+	
+	&__contact-form {
+		
+	}
+	
+	&__description {
+		font-weight: 200;
+		font-size: 10rem;
+	}
+		
+}
+

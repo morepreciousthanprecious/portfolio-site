@@ -1,0 +1,41 @@
+.footer {
+	color: ;
+	background-color: $mainLightGrey;
+	display: block;
+	margin-top: 10rem;	
+
+	&:before, &:after {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	
+	&__text {
+		margin: 0px;
+		padding: 10px;
+		text-align: center;
+		
+	}
+	
+	&__links {
+		padding-top: 20px;
+		
+		@mixin atSmall {
+			padding-top: 10px;
+		}
+	}
+	
+
+	/* resize icon */
+	
+	&__text-subdued {
+		color: #000;
+	}
+	
+	p {
+		font-size: .6rem;
+		font-weight: 400;
+		
+	}
+	
+}

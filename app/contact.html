@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Overpass:200,400,700,900" rel="stylesheet">
+	<title>Jaclyn Touchstone</title>
+	<meta name="keywords" content="graphic design, photography, web developer, UI design, UX design" />
+	<meta property="og:image" content="../assets/images/touchstone-logo-pink.svg" />
+	<meta name="description" content="Graphic Designer, Photographer, and Web Developer" />
+	
+	<!--INSERT LINK TO CSS FILE HERE-->
+	<link rel="stylesheet" href="temp/styles/styles.css">
+	<!--INSERT ANY OTHER DEPENDENCIES HERE-->
+	
+</head>
+<body>  
+	<header>
+	<nav class="nav-bar-sub">
+		<div class="nav-bar-sub__hold">
+			<div class="nav-bar-sub__row">
+				<div class="nav-bar-sub__row-8">
+					<div class="nav-bar-sub__logo">
+						<a class="nav-bar-sub__logo-link" href="../index.html">Jaclyn Touchstone</a>
+					</div>
+				</div>
+				<div class="nav-bar-sub__row-4">
+					<div class="nav-bar-sub__menu-icon">
+						<img src="../assets/images/touchstone-logo-white.svg">
+					</div>
+				</div>
+			</div>
+			<ul class="nav-bar-sub__list" id="nav">
+<!--ADD ABOUT LINK ONCE ABOUT PAGE & BIO IS BUILT
+				<li class="nav-bar__list-item"> 
+					<a class="nav-bar__link" href="#about">About</a>
+				</li>
+-->
+				<li class="nav-bar-sub__list-item">
+					<a class="nav-bar-sub__link" href="../design.html">Design</a>
+				</li>
+				<li class="nav-bar-sub__list-item">
+					<a class="nav-bar-sub__link" href="../photo.html">Photo</a>
+				</li>
+				<li class="nav-bar-sub__list-item">
+					<a class="nav-bar-sub__link" href="../web.html">Web</a>
+				</li>
+				<li class="nav-bar-sub__list-item"> 
+					<a class="nav-bar-sub__link nav-bar--sub__link-last" href="../contact.html">Contact</a>
+				</li>
+			</ul> 
+		</div>
+	</nav>
+	</header>
+	
+	
+
+		<div class="wrapper__container">
+			<div class="gallery__text">
+				<h3 class="gallery__heading">Let's Link!</h3>  
+				<p class="gallery__desc">
+					<a class="contact__link" href="https://www.dropbox.com/s/o8p2r6l36csehgt/jaclyntouchstone__resume_march2017%20-%20Copy.jpg?dl=0">Download r&eacute;sum&eacute;</a>
+				</p>
+				<p class="gallery__desc">
+					To contact me via email, please fill out the form below.
+				</p>
+			</div>
+			<div class="contact">
+				<form class="contact__form" action="mailto:jaclyn.d.touchstone@gmail.com" method="post" enctype="text/plain">
+				<p>
+					Name:<br>
+					<input class="contact__form--input" type="text" name="name">
+				</p>
+				<p>
+					E-mail:<br>
+					<input class="contact__form--input" type="text" name="mail">
+				</p>
+				<p>
+					Comment:<br>
+					<input class="contact__form--input" type="text" name="comment" size="50"><br><br>
+				</p>
+				<div class="btn">
+					<p>
+						<input class="btn__send" type="submit" value="Send">
+						<input class="btn__reset" type="reset" value="Reset">
+					</p>
+				</div>
+				</form>
+			</div>
+		</div>
+
+	
+	<div class="clearfix"></div>	
+	
+	<footer> 
+		<div class="footer">
+			<div class="footer__text">
+				<div class="footer__links">
+					<div class="icon icon__github">
+						<a href="https://github.com/morepreciousthanprecious" class="icon__svg">
+							<img src="../assets/images/github-icon.svg">
+						</a>
+					</div>
+					<div class="icon icon__instagram">
+						<a href="https://www.instagram.com/touchmystone/" class="icon__svg">
+							<img src="../assets/images/instagram-icon.svg">
+						</a>
+					</div>
+					<div class="icon icon__linkedin">
+						<a href="https://www.linkedin.com/in/jaclyn-touchstone-b4b44722/" class="icon__svg">
+							<img src="../assets/images/linkedin-icon.svg">
+						</a>
+					</div>
+					<div class="icon icon__behance">
+						<a href="https://www.behance.net/jaclyntouchstone" class="icon__svg">
+							<img src="../assets/images/behance-icon.svg">
+						</a>
+					</div>
+				</div>
+				<div class="footer__text-subdued">
+					<p>
+					&copy; 
+					<script language="javascript" type="text/javascript">
+						var today = new Date()
+						var year = today.getFullYear()
+						document.write(year)
+					</script>
+					Jaclyn Touchstone.
+				</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--INSERT JS BUILD HERE-->
+	<script src="../temp/scripts/App.js"></script> 
+</body>
+</html>
