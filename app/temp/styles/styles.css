@@ -468,6 +468,7 @@ body {
 	font-family: 'Overpass', sans-serif;
 	margin: auto;
 	background-color: #000;
+	color: #fff;
 }
 
 .nav-bar {
@@ -1208,7 +1209,7 @@ body {
 }
 
 .gallery__text {
-  margin-top: 12rem;
+  margin-top: 2rem;
   margin-left: 5px;
   width: 100%;
 }
@@ -1228,6 +1229,7 @@ body {
 .gallery__desc {
   line-height: 1rem;
   font-size: 0.95rem;
+  color: #fff;
 }
 
 .gallery__gallery {
@@ -1250,8 +1252,6 @@ body {
 	margin-left: 5px;
 	margin-right: auto;
 	max-width: 400px;
-	
-	
 	
 }
 
@@ -1276,6 +1276,14 @@ body {
   width: 100%;
   border-radius: 6px;
   padding: 2px;
+}
+
+.contact h4 {
+  color: #fff;
+}
+
+.contact__desc {
+  color: #fff;
 }
 
 .btn {

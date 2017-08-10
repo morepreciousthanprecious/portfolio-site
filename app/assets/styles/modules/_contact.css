@@ -27,6 +27,12 @@
 		padding: 2px;
 	}
 	
-	
+	h4 {
+		color: #fff;
+	}
+
+	&__desc {
+		color: #fff;
+	}
 	
 }

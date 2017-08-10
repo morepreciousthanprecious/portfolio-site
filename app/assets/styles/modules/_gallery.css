@@ -8,7 +8,7 @@
 	@mixin clearfix;
 	
 	&__text {
-		margin-top: 12rem;
+		margin-top: 2rem;
 		margin-left: 5px;
 		width: 100%;
 		
@@ -26,6 +26,7 @@
 	&__desc {
 		line-height: 1rem;
 		font-size: 0.95rem;
+		color: #fff;
 	}
 	
 	&__gallery {
