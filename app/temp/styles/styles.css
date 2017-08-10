@@ -1069,6 +1069,10 @@ body {
   height: auto;
 }
 
+.portfolio__gallery iframe {
+  width: 100%;
+}
+
 .portfolio__desc {
   padding: 4px;
   margin-top: -4px;
