@@ -2,7 +2,7 @@ $mainLightGrey:#f2f2f2;
 $medGrey:#d3d3d3;
 
 body {
-	font-family: 'Overpass', serif;
+	font-family: 'Overpass', sans-serif;
 	margin: auto;
 	background-color: #000;
 }

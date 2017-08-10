@@ -50,15 +50,18 @@
 			padding: 1.12rem;
 			margin-top: .4rem;
 			display: inline-block;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, .75);
 			
 			@mixin atMedium {
 				padding: 12px;
+				font-size: 1.5rem;
+				font-weight: 600;
 			}
 			
 			@mixin atLarge {
 				font-size: 1.6rem;
 				font-weight: 700;
-				padding: 12px 7px;
+				padding: 1.1rem 7px;
 			}
 		}
 		
@@ -68,6 +71,8 @@
 		padding: 10px;
 		display: none;
 		width: 36px;
+		-webkit-filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, .75));
+  		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, .75));
 		
 		@mixin atSmall {
 			display: block;
@@ -81,6 +86,10 @@
 			padding-top: 0.25rem;
 			padding-right: 2.4rem;
 			padding-bottom: 8px;
+		}
+
+		@mixin atLarge {
+			padding-top: 0.8rem;
 		}
 		
 		img {
@@ -119,7 +128,11 @@
 			float: right;
 			
 			@mixin atSmall {
-				margin-top: .4rem;
+				margin-top: -.2rem;
+			}
+
+			@mixin atMedium {
+				margin-right:0;
 			}
 		}
 	}
@@ -130,7 +143,7 @@
 		@mixin atSmall {
 			float: none;
 			text-align: right;
-			margin-top: .5rem;
+			margin-top: 1.5rem;
 			padding-bottom: 8px;
 			padding-left: 12px;
 			padding-right: 1rem;
@@ -145,7 +158,7 @@
 		@mixin atLarge {
 			float: none;
 			text-align: right;
-			margin-right: 1rem;
+			margin-right: -2rem;
 		}
 
 
@@ -155,6 +168,7 @@
 	&__link {
 		color: #fff;
 		text-decoration: none;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, .75);
 		font-size: 1rem;
 		font-weight: 200;
 		display: block;
@@ -167,8 +181,8 @@
 		}
 		
 		@mixin atLarge {
-			font-size: 1.5rem;
-			padding: 1rem 40px;
+			font-size: 1.12rem;
+			padding: 1.5rem 40px;
 		}
 	}
 	
