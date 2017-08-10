@@ -12,7 +12,7 @@
 	}
 	
 		&__hold {
-		width: 99%;
+		width: 100%;
 		max-width: 1000px;
 		margin: 0 auto;
 		overflow: hidden;
@@ -57,12 +57,14 @@
 				padding: 12px;
 				font-size: 1.5rem;
 				font-weight: 600;
+				
 			}
 			
 			@mixin atLarge {
 				font-size: 1.6rem;
 				font-weight: 700;
 				padding: 1.1rem 7px;
+				margin-left: -.95rem;
 			}
 		}
 		

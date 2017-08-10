@@ -489,7 +489,7 @@ body {
 }
 
 .nav-bar__hold {
-  width: 99%;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
@@ -552,6 +552,7 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
     padding: 1.1rem 7px;
+    margin-left: -.95rem;
   }
 }
 
@@ -1014,9 +1015,9 @@ body {
 
 .portfolio {
 	width: 100%;
-	margin-top: 6rem; 
+	margin-top: 12rem; 
 	margin-bottom: 8rem;
-	padding-top: 5rem;
+	padding-top: 0rem;
 	position: relative;
 		
 }
@@ -1060,11 +1061,7 @@ body {
 
 .portfolio__gallery {
   border: 0px solid #fff;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-@media (min-width:1200px) {
-	
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .portfolio__gallery img {
@@ -1072,17 +1069,10 @@ body {
   height: auto;
 }
 
-.portfolio__img-link {
-	
-}
-
-.portfolio * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .portfolio__desc {
   padding: 4px;
+  margin-top: -4px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .portfolio h4{
@@ -1195,17 +1185,13 @@ body {
 
 .gallery {
 	width: 100%;
-	max-width: 1000px;
-	margin-top: 8rem;
+
+	margin-top: 12rem;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	z-index: 3;
 
-}
-
-.gallery::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .gallery__text {
@@ -1215,36 +1201,34 @@ body {
 }
 
 @media (min-width:600px) {
-
-  .gallery__text {
-    width: 65%;
-  }
-}
-
-.gallery__heading {
-  font-size: 2.45rem;
-  font-weight: 900;
-}
-
-.gallery__desc {
-  line-height: 1rem;
-  font-size: 0.95rem;
-  color: #fff;
-}
-
-.gallery__gallery {
-  border: 0px solid #fff;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-@media (min-width:1200px) {
 	
 }
 
-.gallery__gallery img {
-  width: 100%;
-  height: auto;
-  max-height: 560px;
+.gallery__heading {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.gallery__desc {
+  line-height: 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media (min-width:600px) {
+
+  .gallery__desc {
+    width: 100%;
+  }
+}
+
+@media (min-width:1200px) {
+
+  .gallery__desc {
+    width: 66.6%;
+  }
 }
 
 .contact {
