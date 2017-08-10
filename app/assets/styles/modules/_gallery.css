@@ -41,4 +41,10 @@
 		}
 	}
 
+	&__link {
+		color: #fff;
+		font-weight: 900;
+		text-decoration: none;
+	}
+
 }

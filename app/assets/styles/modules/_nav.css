@@ -3,7 +3,7 @@
 	position: fixed;
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.25);
-	z-index: 1;
+	z-index: 6;
 		&:before, &:after {
 		box-sizing: border-box;
 		margin: px;
