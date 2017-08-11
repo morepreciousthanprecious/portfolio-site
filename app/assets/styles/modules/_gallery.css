@@ -1,6 +1,5 @@
 .gallery {
 	width: 100%;
-
 	margin-top: 12rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,11 +18,16 @@
 		}
 		
 	}
+
+	p {
+		color: #fff;
+	}
 	
 	&__heading {
 		font-size: 1.4rem;
 		font-weight: 900;
 		color: #fff;
+		padding-left: 8px;
 	}
 	
 	&__desc {

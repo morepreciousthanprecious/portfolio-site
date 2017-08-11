@@ -1,19 +1,15 @@
 .contact {
 	margin-top: 5rem;
 	margin-left: 5px;
-	margin-right: auto;
+	margin-right: 1.5rem;
 	max-width: 400px;
 	
 	&__link {
 		color: #fff;
 		text-decoration: none;
 		text-transform: uppercase;
-		font-size: 14px;
+		font-size: 1rem;
 		font-weight: 400;
-		padding-top: 6px;
-		padding-left: 8px;
-		padding-right: 8px;
-		padding-bottom: 4px;
 		background-color: black;
 	}
 	
@@ -23,7 +19,7 @@
 	
 	&__form--input {
 		width: 100%;		
-		border-radius: 6px;
+		border-radius: 2px;
 		padding: 2px;
 	}
 	
@@ -32,6 +28,10 @@
 	}
 
 	&__desc {
+		color: #fff;
+	}
+
+	p {
 		color: #fff;
 	}
 	
