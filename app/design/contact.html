@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Overpass:200,400,700,900" rel="stylesheet">
+	<title>Jaclyn Touchstone</title>
+	<meta name="keywords" content="graphic design, photography, web developer, UI design, UX design" />
+	<meta property="og:image" content="../assets/images/touchstone-logo-pink.svg" />
+	<meta name="description" content="Graphic Designer, Photographer, and Web Developer" />
+	
+	<!--INSERT LINK TO CSS FILE HERE-->
+	<link rel="stylesheet" href="temp/styles/styles.css">
+	<!--INSERT ANY OTHER DEPENDENCIES HERE-->
+	
+</head>
+<body>  
+	<header>
+	<nav class="nav-bar">
+		<div class="nav-bar__hold">
+			<div class="nav-bar__row">
+				<div class="nav-bar__row-8">
+					<div class="nav-bar__logo">
+						<a class="nav-bar__logo-link" href="../index.html">Jaclyn Touchstone</a>
+					</div>
+				</div>
+				<div class="nav-bar__row-4">
+					<div class="nav-bar__menu-icon">
+						<img src="../assets/images/touchstone-logo-white.svg">
+					</div>
+				</div>
+			</div>
+			<ul class="nav-bar__list" id="nav">
+<!--ADD ABOUT LINK ONCE ABOUT PAGE & BIO IS BUILT
+				<li class="nav-bar__list-item"> 
+					<a class="nav-bar__link" href="#about">About</a>
+				</li>
+-->
+				<li class="nav-bar__list-item">
+					<a class="nav-bar__link" href="../design.html">Design</a>
+				</li>
+				<li class="nav-bar__list-item">
+					<a class="nav-bar__link" href="../photo.html">Photo</a>
+				</li>
+				<li class="nav-bar__list-item">
+					<a class="nav-bar__link" href="../web.html">Web</a>
+				</li>
+				<li class="nav-bar__list-item"> 
+					<a class="nav-bar__link nav-bar__link-last" href="../contact.html">Contact</a>
+				</li>
+			</ul> 
+		</div>
+	</nav>
+	</header>
+	
+	<div class="about">
+		<picture>
+	      <source srcset="assets/images/water_xl.jpg 1920w, assets/images/water_xl-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+	      <source srcset="assets/images/water_lg.jpg 1380w, assets/images/water_lg-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+	      <source srcset="assets/images/water_md.jpg 960w, assets/images/water_md-hi-dpi.jpg 1920w" media="(min-width: 640px)">
+	      <img srcset="assets/images/water_sm.jpg 640w, assets/images/water_sm-hi-dpi.jpg 1280w" alt="Horizon view of pink clouds at sunset" class="about_image">
+	    </picture>
+	</div>
+	
+	<div class="portfolio">
+
+		<div class="wrapper__container--contact">
+			<div class="gallery__text">
+				<h3 class="gallery__heading">Let's Link!</h3>  
+				<p class="gallery__desc--contact">
+					<a class="contact__link" href="https://www.dropbox.com/s/nvifirsugxhelc5/jaclyntouchstone__resume_july2017.pdf?dl=0">Download r&eacute;sum&eacute;</a>
+				</p>
+			</div>
+			<div class="contact">
+				<form class="contact__form" action="mailto:jaclyn.d.touchstone@gmail.com" method="post" enctype="text/plain">
+				<p>
+					Name:<br>
+					<input class="contact__form--input" type="text" name="name">
+				</p>
+				<p>
+					E-mail:<br>
+					<input class="contact__form--input" type="text" name="mail">
+				</p>
+				<p>
+					Message:<br>
+					<input class="contact__form--input" type="text" name="message" size="50"><br><br>
+				</p>
+				<div class="btn">
+					<p>
+						<input class="btn__send" type="submit" value="Send">
+					</p>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="clearfix"></div>	
+	
+	<footer> 
+		<div class="footer">
+			<div class="footer__text">
+				<div class="footer__links">
+					<div class="icon icon__github">
+						<a href="https://github.com/morepreciousthanprecious" class="icon__svg">
+							<img width="32px" src="../assets/images/github-icon-white.png">
+						</a>
+					</div>
+					<div class="icon icon__instagram">
+						<a href="https://www.instagram.com/jaclyntouchstone/" class="icon__svg">
+							<img width="32px" src="../assets/images/ig-icon-white.png">
+						</a>
+					</div>
+					<div class="icon icon__linkedin">
+						<a href="https://www.linkedin.com/in/jaclyn-touchstone-b4b44722/" class="icon__svg">
+							<img width="32px" src="../assets/images/linkedin-icon-white.png">
+						</a>
+					</div>
+					<div class="icon icon__behance">
+						<a href="https://www.behance.net/jaclyntouchstone" class="icon__svg">
+							<img width="32px" src="../assets/images/behance-icon-white.png">
+						</a>
+					</div>
+				</div>
+				<div class="footer__text-subdued">
+					<p>
+					&copy; 
+					<script language="javascript" type="text/javascript">
+						var today = new Date()
+						var year = today.getFullYear()
+						document.write(year)
+					</script>
+					Jaclyn Touchstone.
+				</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--INSERT JS BUILD HERE-->
+	<script src="../temp/scripts/App.js"></script> 
+</body>
+</html>
